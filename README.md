@@ -14,15 +14,16 @@ This project is a Shopping API built with Go, using the Gin framework and Okta f
 ```bash
 git clone https://github.com/ShoppingDem/api.git
 cd apigo get -u github.com/gin-gonic/gin
+```
 
 ### Install Dependencies
-
+```bash
 go get -u github.com/swaggo/swag/cmd/swag
 go get -u github.com/swaggo/gin-swagger
 go get -u github.com/swaggo/files
 go get -u github.com/okta/okta-jwt-verifier-golang
 go get -u github.com/joho/godotenv
-
+```
 ### Generate Swagger Documentation
 
 swag init
