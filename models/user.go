@@ -1,11 +1,15 @@
 package models
 
 type User struct {
-	ID       int    `json:"id"`
-	Name     string `json:"name" binding:"required"`
-	Email    string `json:"email" binding:"required,email"`
-	Password string `json:"password" binding:"required,min=6"`
+	ID           int    `json:"id"`
+	PhoneNumber  string `json:"phoneNumber" binding:"required"`
+	PasswordHash string `json:"passwordHash" binding:"required"`
 }
 
-var Users = []User{}
+type UserRegistration struct {
+	PhoneNumber string `json:"phoneNumber" binding:"required"`
+	Password    string `json:"password" binding:"required,min=6"`
+}
+
+var Users []User
 var NextID = 1
