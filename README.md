@@ -6,7 +6,7 @@ This project is a Shopping API built with Go, using the Gin framework and Okta f
 
 ### Prerequisites
 
-- Go (version 1.16 or later)
+- Go (version 1.23.1 or later)
 - Git
 
 ### Clone the Repository
@@ -41,8 +41,8 @@ go build -o api
 ./api
 
 
-###API Documentation
-####Security
+### API Documentation
+#### Security
 
 This API uses Okta for authentication. All protected endpoints require a valid Okta token to be included in the request header.
 
