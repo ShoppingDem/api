@@ -25,3 +25,10 @@ go.work.sum
 .env
 go.mod
 go.sum
+
+# PostgreSQL related
+*.sql
+*.dump
+
+# Debug files
+__debug_*

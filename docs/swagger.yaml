@@ -31,7 +31,7 @@ definitions:
 host: localhost:8080
 info:
   contact: {}
-  description: This is a sample shopping API server.
+  description: This is a sample shopping API server with Okta authentication.
   title: Shopping API
   version: "1.0"
 paths:
@@ -46,4 +46,9 @@ paths:
       summary: Register user routes
       tags:
       - users
+securityDefinitions:
+  BearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
 swagger: "2.0"

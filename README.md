@@ -6,7 +6,7 @@ This project is a Shopping API built with Go, using the Gin framework and Okta f
 
 ### Prerequisites
 
-- Go (version 1.23.1 or later)
+- Go (version 1.23.3 or later)
 - Git
 
 ### Clone the Repository
